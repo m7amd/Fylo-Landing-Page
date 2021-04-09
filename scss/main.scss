@@ -1,5 +1,7 @@
 @import 'variables';
 @import 'header';
+@import 'team';
+@import 'contact';
 
 html {
   box-sizing: border-box;
@@ -13,7 +15,6 @@ html {
 }
 
 body {
-  height: 10000px;
   font-family: $bodyFont;
   line-height: 1.3;
 }

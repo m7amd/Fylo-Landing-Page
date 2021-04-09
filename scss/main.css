@@ -35,7 +35,8 @@
     font-size: 1rem; } }
 .hero {
   height: 100vh;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-bottom: 150px; }
   .hero .hero-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -106,7 +107,222 @@
       width: 100% !important;
       margin: 10px 0; }
     .hero .hero-content .img {
-      margin: 0 auto; } }
+      margin: 0 auto;
+      padding-bottom: 120px; } }
+.team {
+  background-image: url("../images/bg-curve-desktop.svg");
+  background-size: cover;
+  background-position: 46% center;
+  overflow: hidden;
+  padding: 100px 0; }
+  .team .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 40px; }
+    .team .content .text h2 {
+      font-size: 30px;
+      color: #070439;
+      margin-bottom: 40px; }
+    .team .content .text p {
+      line-height: 1.6;
+      color: #070439;
+      font-size: 1rem; }
+    .team .content .text .last {
+      margin: 25px 0; }
+    .team .content .text .link {
+      color: #3c9f8f;
+      position: relative; }
+      .team .content .text .link::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 167px;
+        height: 2px;
+        background-color: #3c9f8f; }
+      .team .content .text .link a {
+        color: #3c9f8f;
+        font-size: 1rem; }
+    .team .content .img {
+      width: 540px; }
+      .team .content .img img {
+        width: 100%; }
+    .team .content .resume-box {
+      background-color: #fff;
+      padding: 25px 30px;
+      width: 470px;
+      overflow: hidden;
+      border-radius: 7px; }
+      .team .content .resume-box > p {
+        margin: 6px 0 20px;
+        line-height: 1.6;
+        width: 80%; }
+      .team .content .resume-box .info {
+        display: flex;
+        align-items: center; }
+        .team .content .resume-box .info img {
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          padding: 3px;
+          background-color: #fff;
+          margin-right: 15px;
+          position: relative;
+          top: -7px; }
+        .team .content .resume-box .info h4 {
+          font-size: 14px; }
+        .team .content .resume-box .info p {
+          font-size: 12px;
+          margin: 5px 0; }
+
+@media (max-width: 768px) {
+  .team {
+    margin-top: 100px; }
+    .team .content {
+      grid-template-columns: 1fr; }
+      .team .content > .text {
+        text-align: center; }
+        .team .content > .text .link::after {
+          left: 50%;
+          transform: translateX(-50%); }
+      .team .content .img {
+        margin-top: 50px; }
+      .team .content .resume-box {
+        margin: 70px auto 0; } }
+.contact {
+  overflow: hidden;
+  padding: 100px 0;
+  background-color: #585989; }
+  .contact .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 143px;
+    color: #fff; }
+    .contact .content .text {
+      flex: 1; }
+      .contact .content .text h3 {
+        font-size: 30px;
+        margin-bottom: 28px; }
+      .contact .content .text p {
+        font-size: 1rem;
+        line-height: 1.6; }
+    .contact .content .form {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; }
+      .contact .content .form input {
+        outline: 0;
+        border: 0;
+        font-size: 13px;
+        padding: 9px 15px;
+        border-radius: 5px;
+        display: inline-block;
+        margin-bottom: 10px;
+        color: #070439; }
+      .contact .content .form a {
+        display: block;
+        background-color: #3065f8;
+        color: #fff;
+        width: 200px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 5px;
+        font-size: 14px; }
+
+@media (max-width: 992px) {
+  .contact {
+    overflow: hidden; }
+    .contact .content {
+      flex-direction: column; }
+      .contact .content .text {
+        text-align: center; }
+      .contact .content .form input {
+        margin: 0 auto 10px;
+        width: 320px; }
+      .contact .content .form a {
+        margin: 0 auto;
+        width: 320px; } }
+.footer {
+  overflow: hidden;
+  background-color: #070439;
+  padding: 100px 0 70px; }
+  .footer .logo {
+    position: relative;
+    margin-bottom: 30px; }
+    .footer .logo::after {
+      content: 'Fylo';
+      position: absolute;
+      left: 61px;
+      top: -10px;
+      color: #fff;
+      font-size: 42px;
+      font-weight: bold; }
+  .footer .content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); }
+    .footer .content a {
+      display: block; }
+    .footer .content .links {
+      justify-self: center; }
+      .footer .content .links .phone,
+      .footer .content .links .email {
+        display: flex;
+        gap: 20px; }
+        .footer .content .links .phone a,
+        .footer .content .links .email a {
+          color: #bfbfbf;
+          font-size: 15px; }
+      .footer .content .links .phone {
+        margin-bottom: 20px; }
+      .footer .content .links > a {
+        margin-bottom: 25px;
+        color: #bfbfbf; }
+        .footer .content .links > a:hover {
+          text-decoration: underline; }
+    .footer .content .sc {
+      justify-self: center; }
+      .footer .content .sc i {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        color: #Fff;
+        text-align: center;
+        line-height: 35px;
+        margin-left: 13px;
+        cursor: pointer;
+        font-size: 15px;
+        transition: .2s ease-in-out; }
+        .footer .content .sc i:hover {
+          background-color: #fff;
+          color: #070439; }
+
+@media (max-width: 768px) {
+  .footer {
+    overflow: hidden; }
+    .footer .logo {
+      text-align: center; }
+      .footer .logo::after {
+        left: 48%; }
+    .footer .content {
+      grid-template-columns: 1fr; }
+      .footer .content > .links {
+        padding: 20px 0; }
+      .footer .content .links {
+        justify-self: center;
+        margin-bottom: 5px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        width: 100%; }
+      .footer .content .sc {
+        justify-self: start;
+        width: 80%;
+        padding-top: 10px; } }
 html {
   box-sizing: border-box;
   font-size: 100%; }
@@ -117,7 +333,6 @@ html {
   margin: 0; }
 
 body {
-  height: 10000px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.3; }
 
